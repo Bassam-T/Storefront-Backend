@@ -1,0 +1,8 @@
+.env
+index.txt
+logfile
+Paths.bat
+REQUIREMENTS.md
+start psql server.txt
+extract files from msi.txt
+node_modules

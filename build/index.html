@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <script>
+            const getuser = async () => {
+                const rawResponse = await fetch('http://127.0.0.1:3000/user', {
+                    method: 'get',
+                    headers: {
+                    'Authorization':'Bearer eyJhbGciOiJIUzI1NiJ9.MQ.1YuJMY5MAeFzsyIMLTnnCKDTs2kQah-VIVtRFX7iAPk'
+                    }
+                });
+                const content = await rawResponse.json();
+                console.log(content);
+                return content;
+            }
+            //________________________________________________________________________________
+            async function privewAllUsers(){
+                const users = await getuser();
+                document.getElementById('users').textContent = await JSON.stringify(users);
+            }
+        </script>
+        <button onclick="privewAllUsers()">
+            click me
+        </button>
+        <div id="users"></div>
+    </body>
+</html>

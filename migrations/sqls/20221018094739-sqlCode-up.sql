@@ -1,0 +1,16 @@
+INSERT INTO users (firstName,lastName,password) values('bassam','allam','password123');
+INSERT INTO users (firstName,lastName,password) values('baher','allam','ifYouComeBack');
+INSERT INTO users (firstName,lastName,password) values('menna','allah','menna123');
+INSERT INTO products (name,price,category) values('iphone2',2000,'phone');
+INSERT INTO products (name,price,category) values('iphone3',3400,'phone');
+INSERT INTO products (name,price,category) values('samsung HD',7740,'TV');
+INSERT INTO orders (user_id,status) values(1,'active');
+INSERT INTO orders (user_id,status) values(1,'active');
+INSERT INTO orders (user_id,status) values(2,'active');
+INSERT INTO orders (user_id,status) values(3,'active');
+INSERT INTO orders_products (order_id,product_id,quantity) values(1,1,2);
+INSERT INTO orders_products (order_id,product_id,quantity) values(1,2,5);
+INSERT INTO orders_products (order_id,product_id,quantity) values(2,3,1);
+INSERT INTO orders_products (order_id,product_id,quantity) values(3,1,2);
+INSERT INTO orders_products (order_id,product_id,quantity) values(3,1,1);
+INSERT INTO orders_products (order_id,product_id,quantity) values(4,3,1);
